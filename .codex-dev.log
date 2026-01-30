@@ -1,0 +1,19 @@
+
+> setor77-portal@1.0.0 dev
+> next dev --port 3000
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 10s
+ ○ Compiling / ...
+ ✓ Compiled / in 7.8s (552 modules)
+ ✓ Compiled in 431ms (280 modules)
+ GET / 200 in 11443ms
+ ✓ Compiled in 888ms (592 modules)
+ ✓ Compiled /_not-found in 362ms (581 modules)
+ GET /entrelinhas-logo.png 404 in 480ms
+ GET / 200 in 108ms
+ GET /entrelinhas-logo.png 404 in 19ms
