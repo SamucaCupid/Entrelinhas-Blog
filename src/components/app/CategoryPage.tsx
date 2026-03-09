@@ -1,18 +1,18 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import type { ReactNode } from "react";
+import { AdSlot } from "@/components/app/AdSlot";
 import type { PostUI } from "@/types";
 
 type CategoryPageProps = {
-  categorySlug: string;
   posts: PostUI[];
   categoryName?: string;
+  categorySlug?: string;
   sidebar?: ReactNode;
 };
 
-export function CategoryPage({ categorySlug, posts, categoryName, sidebar }: CategoryPageProps) {
-  const categoryPosts = posts.filter((post) => post.categorySlug === categorySlug);
-  const title = categoryName ?? categorySlug;
+export function CategoryPage({ posts, categoryName, categorySlug, sidebar }: CategoryPageProps) {
+  const title = categoryName ?? "Categoria";
 
   return (
     <div className="hidden md:block bg-zinc-50 dark:bg-slate-900 min-h-screen transition-colors">
@@ -24,13 +24,13 @@ export function CategoryPage({ categorySlug, posts, categoryName, sidebar }: Cat
 
         <div className="mb-8">
           <h1 className="text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-white mb-2">{title}</h1>
-          <p className="text-zinc-600 dark:text-zinc-400">{categoryPosts.length} noticias encontradas</p>
+          <p className="text-zinc-600 dark:text-zinc-400">{posts.length} noticias encontradas</p>
         </div>
 
         <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
           <div className="xl:col-span-2">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {categoryPosts.map((post) => (
+              {posts.map((post) => (
                 <Link
                   key={post.id}
                   href={`/post/${post.slug}`}
@@ -50,7 +50,10 @@ export function CategoryPage({ categorySlug, posts, categoryName, sidebar }: Cat
               ))}
             </div>
           </div>
-          <div className="xl:col-span-1 mt-8 xl:mt-0">{sidebar}</div>
+          <div className="xl:col-span-1 mt-8 xl:mt-0">
+            <AdSlot slot="sidebar-category" categorySlug={categorySlug} className="mb-6" />
+            {sidebar}
+          </div>
         </div>
       </main>
     </div>

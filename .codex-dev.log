@@ -1,19 +1,146 @@
 
 > setor77-portal@1.0.0 dev
-> next dev --port 3000
+> next dev -p 3000
 
   ▲ Next.js 14.2.35
   - Local:        http://localhost:3000
   - Environments: .env.local
 
  ✓ Starting...
- ✓ Ready in 10s
+ ✓ Ready in 9s
  ○ Compiling / ...
- ✓ Compiled / in 7.8s (552 modules)
- ✓ Compiled in 431ms (280 modules)
- GET / 200 in 11443ms
- ✓ Compiled in 888ms (592 modules)
- ✓ Compiled /_not-found in 362ms (581 modules)
- GET /entrelinhas-logo.png 404 in 480ms
+ ✓ Compiled / in 6.8s (603 modules)
+ ✓ Compiled in 207ms (297 modules)
+ GET / 200 in 8074ms
+ GET / 200 in 551ms
+ GET / 200 in 970ms
+ GET / 200 in 39ms
+ ✓ Compiled in 343ms (603 modules)
+ ✓ Compiled in 281ms (603 modules)
+ ✓ Compiled in 155ms (297 modules)
  GET / 200 in 108ms
- GET /entrelinhas-logo.png 404 in 19ms
+ ✓ Compiled /categoria/[slug] in 435ms (604 modules)
+ GET /categoria/uncategorized 200 in 1417ms
+ GET / 200 in 493ms
+ GET / 200 in 54ms
+ GET / 200 in 42ms
+ GET / 200 in 64ms
+ GET / 200 in 59ms
+ GET / 200 in 53ms
+ ✓ Compiled in 363ms (604 modules)
+ ✓ Compiled in 327ms (605 modules)
+ GET / 200 in 526ms
+ ✓ Compiled in 178ms (298 modules)
+ GET / 200 in 42ms
+ GET / 200 in 37ms
+ GET / 200 in 51ms
+ GET / 200 in 73ms
+ GET / 200 in 74ms
+ GET / 200 in 39ms
+   Reload env: .env.local
+ ✓ Compiled in 154ms (591 modules)
+ GET / 200 in 83ms
+ ✓ Compiled in 277ms (605 modules)
+ GET / 200 in 46ms
+ GET / 200 in 43ms
+ GET / 200 in 32ms
+ GET / 200 in 46ms
+ GET / 200 in 33ms
+ GET / 200 in 43ms
+ GET / 200 in 55ms
+ GET / 200 in 59ms
+ ✓ Compiled in 338ms (605 modules)
+ GET / 200 in 85ms
+ ✓ Compiled in 165ms (307 modules)
+ ✓ Compiled /categoria/[slug] in 246ms (321 modules)
+ GET / 200 in 445ms
+ GET /categoria/politica 200 in 473ms
+ GET /categoria/politica 200 in 484ms
+ GET /categoria/politica 200 in 42ms
+ GET /categoria/politica 200 in 47ms
+ GET /categoria/politica 200 in 48ms
+ GET / 200 in 48ms
+ GET / 200 in 32ms
+ GET / 200 in 45ms
+ GET / 200 in 470ms
+ GET / 200 in 44ms
+ GET / 200 in 30ms
+ GET /categoria/negocios 200 in 1044ms
+ ✓ Compiled in 146ms (321 modules)
+ ✓ Compiled in 117ms (321 modules)
+ ✓ Compiled in 439ms (619 modules)
+ ✓ Compiled in 116ms (298 modules)
+ GET /categoria/negocios 200 in 90ms
+ GET /categoria/neg%C3%B3cios 404 in 118ms
+ ✓ Compiled in 295ms (619 modules)
+ GET /categoria/negocios 200 in 74ms
+ GET / 200 in 23ms
+ GET /categoria/neg%C3%B3cios 404 in 84ms
+ GET /categoria/neg%C3%B3cios 404 in 140ms
+ ✓ Compiled in 243ms (619 modules)
+ GET / 200 in 39ms
+ GET /categoria/negocios 200 in 92ms
+ GET /categoria/negocios 200 in 509ms
+ GET /categoria/negocios 200 in 55ms
+ ✓ Compiled in 352ms (619 modules)
+ ✓ Compiled in 163ms (619 modules)
+ ✓ Compiled in 234ms (619 modules)
+ GET /categoria/negocios 200 in 119ms
+ GET /categoria/negocios 200 in 58ms
+ GET / 200 in 35ms
+ GET /categoria/negocios 200 in 55ms
+ GET / 200 in 42ms
+ GET / 200 in 73ms
+ GET / 200 in 39ms
+ GET /categoria/negocios 200 in 509ms
+ GET /categoria/negocios 200 in 66ms
+ ✓ Compiled in 122ms (321 modules)
+ GET / 200 in 46ms
+ GET /categoria/negocios 200 in 59ms
+ GET / 200 in 532ms
+ GET / 200 in 32ms
+ GET / 200 in 963ms
+ GET / 200 in 55ms
+ GET / 200 in 64ms
+ GET / 200 in 51ms
+ GET / 200 in 63ms
+ GET / 200 in 66ms
+ ✓ Compiled in 466ms (619 modules)
+ GET / 200 in 103ms
+ ✓ Compiled in 338ms (619 modules)
+ GET / 200 in 83ms
+ ✓ Compiled in 303ms (619 modules)
+ GET / 200 in 83ms
+ GET / 200 in 618ms
+ GET / 200 in 48ms
+ ✓ Compiled in 325ms (619 modules)
+ GET / 200 in 403ms
+ ✓ Compiled /post/[slug] in 358ms (609 modules)
+ ✓ Compiled in 132ms (325 modules)
+ GET / 200 in 423ms
+ GET / 200 in 990ms
+ GET / 200 in 48ms
+ GET / 200 in 51ms
+ ✓ Compiled in 315ms (619 modules)
+ GET / 200 in 84ms
+ GET / 200 in 55ms
+ ✓ Compiled in 355ms (619 modules)
+ ✓ Compiled /post/[slug] in 65ms (325 modules)
+ GET / 200 in 90ms
+ GET / 200 in 68ms
+ GET /categoria/policia 200 in 1126ms
+ ✓ Compiled in 322ms (619 modules)
+ GET / 200 in 100ms
+ GET / 200 in 41ms
+ GET / 200 in 58ms
+ GET / 200 in 66ms
+ GET / 200 in 66ms
+ GET / 200 in 79ms
+ GET / 200 in 79ms
+ GET / 200 in 27ms
+ ✓ Compiled in 203ms (321 modules)
+ ✓ Compiled in 296ms (619 modules)
+ ✓ Compiled in 278ms (619 modules)
+ GET / 200 in 81ms
+ ✓ Compiled /post/[slug] in 176ms (325 modules)
+ ✓ Compiled in 214ms (325 modules)

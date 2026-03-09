@@ -13,7 +13,7 @@ type SearchPageProps = {
 
 export default async function SearchPage({ searchParams }: SearchPageProps) {
   const query = typeof searchParams?.q === "string" ? searchParams.q.trim() : "";
-  const [posts, categories, temperature] = await Promise.all([getPosts(), getCategories(), getTemperature()]);
+  const [posts, categories, temperature] = await Promise.all([getPosts(undefined, { revalidate: 60 }), getCategories({ revalidate: 120 }), getTemperature()]);
   const results = query
     ? posts.filter((post) => {
         const term = query.toLowerCase();

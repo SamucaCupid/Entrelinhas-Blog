@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import type { ReactNode } from "react";
+import { AdSlot } from "@/components/app/AdSlot";
 import type { PostUI } from "@/types";
 
 type PostPageProps = {
@@ -11,6 +12,7 @@ type PostPageProps = {
 
 export function PostPage({ post, posts, aside }: PostPageProps) {
   const relatedPosts = posts.filter((item) => item.id !== post.id).slice(0, 4);
+  const contentHtml = post.content?.trim() ? post.content : `<p>${post.excerpt}</p>`;
 
   return (
     <div className="hidden md:block bg-zinc-50 dark:bg-slate-900 min-h-screen transition-colors">
@@ -36,21 +38,12 @@ export function PostPage({ post, posts, aside }: PostPageProps) {
 
               {post.featuredImageUrl && <img src={post.featuredImageUrl} alt={post.title} className="w-full h-72 lg:h-96 object-cover rounded-xl mb-6" />}
 
-              <div className="prose prose-zinc dark:prose-invert max-w-none">
-                <p className="lead">{post.excerpt}</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
+              <div className="prose prose-zinc dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: contentHtml }} />
             </div>
           </article>
 
           <aside className="xl:col-span-1 mt-8 xl:mt-0">
+            <AdSlot slot="sidebar-post" categorySlug={post.categorySlug} className="mb-6" />
             <div className="bg-white border-zinc-200 dark:bg-slate-800 dark:border-slate-700 border rounded-2xl p-6 shadow-sm mb-6">
               <h3 className="text-zinc-900 dark:text-white font-extrabold text-lg mb-4">Leia tambem</h3>
               <div className="space-y-4">
